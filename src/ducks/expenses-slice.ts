@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from "uuid";
 
 export interface Expense {
-  id: string;
+  id?: string;
   description: string;
   note: string;
   amount: number;

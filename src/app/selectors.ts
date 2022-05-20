@@ -26,3 +26,5 @@ const selecteExpenses = createSelector(
       });
   }
 );
+
+export { selecteExpenses };
