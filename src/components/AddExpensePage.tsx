@@ -1,18 +1,24 @@
-import { useAppSelector, useAppDispatch } from "../app/hooks";
-import { setTextFilter } from "../ducks/filter-slice";
-import { selecteExpenses } from "../app/selectors";
+import React from "react";
+import ExpenseForm from "./ExpenseForm";
 
 const AddExpensePage = () => {
-  const dispatch = useAppDispatch();
-  const expenses = useAppSelector(selecteExpenses);
-  console.log("filtered expenses");
-  console.log(expenses);
-  const handleClick = () => {
-    dispatch(setTextFilter("hello"));
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const target = e.target as typeof e.target & {
+      description: { value: string };
+      note: { value: string };
+      amount: { value: number };
+      date: { value: Date };
+    };
+
+    const description = target.description.value;
+    const amount = target.amount.value;
+    const date = target.date.value;
+    console.log(amount);
   };
   return (
-    <div>
-      <button onClick={handleClick}> add expense</button>
+    <div className="p-4">
+      <ExpenseForm onSubmit={handleSubmit} />
     </div>
   );
 };
