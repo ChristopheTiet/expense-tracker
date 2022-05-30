@@ -5,11 +5,10 @@ import ExpenseListItem from "./ExpenseListItem";
 export default function ExpenseList() {
   const expenses = useAppSelector(selecteExpenses);
   return (
-    <>
-      <h1>Expense List</h1>
+    <div className="space-y-2 py-4">
       {expenses.map((expenseItem) => {
         return <ExpenseListItem key={expenseItem.id} {...expenseItem} />;
       })}
-    </>
+    </div>
   );
 }
