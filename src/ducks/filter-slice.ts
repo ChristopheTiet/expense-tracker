@@ -18,8 +18,11 @@ const filterSlice = createSlice({
   name: "filter",
   initialState,
   reducers: {
-    setTextFilter(state, action: PayloadAction<string>) {
-      state.text = action.payload;
+    setTextFilter: {
+      reducer: (state, action: PayloadAction<string>) => {
+        action ? (state.text = action.payload) : (state.text = "");
+      },
+      prepare: (value?: string) => ({ payload: value || "" }),
     },
     sortByAmount(state) {
       state.sortBy = "amount";
