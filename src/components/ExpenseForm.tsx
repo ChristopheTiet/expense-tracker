@@ -1,5 +1,6 @@
 import { Expense } from "../ducks/expenses-slice";
 import moment from "moment";
+import "tw-elements";
 
 interface ExpenseFormProps {
   expense?: Expense;

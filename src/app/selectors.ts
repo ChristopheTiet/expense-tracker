@@ -1,7 +1,7 @@
 import { createSelector } from "@reduxjs/toolkit";
 import { RootState } from "./store";
 
-const selecteExpenses = createSelector(
+const selectExpenses = createSelector(
   (state: RootState) => state.expenses,
   (state: RootState) => state.filter,
   (expenses, { text, sortBy, startDate, endDate }) => {
@@ -27,4 +27,4 @@ const selecteExpenses = createSelector(
   }
 );
 
-export { selecteExpenses };
+export { selectExpenses };
