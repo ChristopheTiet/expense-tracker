@@ -1,30 +1,6 @@
 import { selectExpenses } from "../../app/selectors";
-import { Expense } from "../../ducks/expenses-slice";
+import expenses from "../fixtures/expenses";
 import { FilterState } from "../../ducks/filter-slice";
-
-const expenses: Expense[] = [
-  {
-    id: "1",
-    description: "cake",
-    note: "",
-    amount: 15,
-    createdAt: 0,
-  },
-  {
-    id: "2",
-    description: "rent",
-    note: "",
-    amount: 1000,
-    createdAt: 1000,
-  },
-  {
-    id: "3",
-    description: "computer",
-    note: "",
-    amount: 2000,
-    createdAt: 2000,
-  },
-];
 
 test("should filter by startDate", () => {
   const filter: FilterState = {

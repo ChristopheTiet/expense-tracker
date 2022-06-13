@@ -9,7 +9,6 @@ const EditExpensePage = () => {
   const expense = useAppSelector(({ expenses }) => {
     return expenses.find((expense) => expense.id === id);
   });
-  console.log(expense);
   const navigate = useNavigate();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

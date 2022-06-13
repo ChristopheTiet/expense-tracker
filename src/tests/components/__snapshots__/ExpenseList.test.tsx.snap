@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseList correctly 1`] = `
+<div
+  className="space-y-2 py-4"
+>
+  <p>
+    No expenses
+  </p>
+</div>
+`;

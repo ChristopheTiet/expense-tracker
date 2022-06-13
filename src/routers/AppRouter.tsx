@@ -7,10 +7,6 @@ import HelpPage from "../components/HelpPage";
 import NotFoundPage from "../components/NotFoundPage";
 
 const AppRouter = () => {
-  // useAppSelector((state) => {
-  //   console.log(state);
-  // });
-
   return (
     <BrowserRouter>
       <Header />

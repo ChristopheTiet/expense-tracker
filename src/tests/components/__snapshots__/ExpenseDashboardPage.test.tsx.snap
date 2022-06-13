@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseDashBoard correctly 1`] = `
+<div
+  className="p-4"
+>
+  <div
+    className="flex space-x-3"
+  >
+    <input
+      className="text-base font-normal border-black border-2 rounded pl-5"
+      onChange={[Function]}
+      placeholder="filter"
+      type="text"
+      value=""
+    />
+    <select
+      aria-label="order by amount or date"
+      className=" text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border-2 border-solid border-gray-300 rounded transition focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+      onChange={[Function]}
+      value="date"
+    >
+      <option
+        value="amount"
+      >
+        amount
+      </option>
+      <option
+        value="date"
+      >
+        date
+      </option>
+    </select>
+    <div>
+      From:
+       
+      <input
+        className=" text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border-2 border-solid border-gray-300 rounded transition focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+        onChange={[Function]}
+        type="date"
+      />
+    </div>
+    <div>
+      To:
+       
+      <input
+        className=" text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border-2 border-solid border-gray-300 rounded transition focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+        onChange={[Function]}
+        type="date"
+      />
+    </div>
+  </div>
+  <div
+    className="space-y-2 py-4"
+  >
+    <p>
+      No expenses
+    </p>
+  </div>
+</div>
+`;

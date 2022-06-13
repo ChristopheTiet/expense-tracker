@@ -9,7 +9,6 @@ const AddExpensePage = () => {
   const navigate = useNavigate();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("submit");
     const target = e.target as typeof e.target & {
       description: { value: string };
       note: { value: string };
